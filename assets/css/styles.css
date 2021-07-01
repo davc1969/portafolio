@@ -1,3 +1,13 @@
+/* html {
+    scroll-behavior: smooth;
+  } */
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
 .navbar-brand{
     font-family: 'Indie Flower', cursive;
     font-size: 1.5rem;
@@ -27,4 +37,45 @@
   .hero-image h1{
     font-family: 'Indie Flower', cursive;
     font-size: 7rem;      
+  }
+
+
+  .sobremi{
+      text-align: center;
+      width: 80%;
+  }
+  
+  .sobremi h1{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.sobremi h5{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+  .sobremi hr{
+      width: 40%;
+      border-color: blue;
+  }
+
+  .sobremi row{
+      width: 100%;
+  }
+
+  .centrado{
+      text-align: center;
+  }
+
+  .centrado p{
+      text-align: justify;
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+
+  .historia p{
+      text-align: justify;
   }
