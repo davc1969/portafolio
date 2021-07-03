@@ -7,49 +7,87 @@ body{
 }
 
 
+h1{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
+hr{
+    width: 40%;
+    border-color: blue;
+}
+
+
+/* NavBar */
 .navbar-brand{
     font-family: 'Indie Flower', cursive;
     font-size: 1.5rem;
 }
 
+.container{
+    max-width: 100%;
+}
 
-/* The hero image */
+/* Hero-Image Imagen principal con texto encima */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/dario01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     padding-bottom: 5rem;
+    position: relative;
 }
-  
-  /* Place text in the middle of the image */
-.hero-text {
-    text-align: center;
+
+.hero-image div{
     position: absolute;
-    /* top: 70%;
-    left: 10%; */
-    /* transform: translate(-50%, -50%); */
-    color: white;
-  }
-
-  .hero-image h1{
-    font-family: 'Indie Flower', cursive;
-    font-size: 7rem;      
-  }
-
-
-  .sobremi{
-      text-align: center;
-      width: 80%;
-  }
-  
-  .sobremi h1{
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-
+    bottom: 35%;
+    width: 100%;
 }
+
+.hero-image h1{
+    color: white;
+    font-family: "Indie Flower";
+    font-weight: bold;
+    font-size: 7rem;
+}
+
+.hero-image hr{
+    width: 50%;
+    border-top-width: 3px;
+    border-color: white;
+}
+
+.hero-image p{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 576px){
+
+    .hero-image h1{
+        font-size: 3rem;
+    }
+
+    .hero-image p{
+        font-size: 1rem;
+    }
+}
+
+
+
+.sobremi{
+    text-align: center;
+    width: 80%;
+}
+
+
+
 
 .sobremi h5{
     text-align: center;
@@ -57,25 +95,56 @@ body{
 
 }
 
-  .sobremi hr{
-      width: 40%;
-      border-color: blue;
-  }
 
-  .sobremi row{
-      width: 100%;
-  }
+.sobremi row{
+    width: 100%;
+}
 
-  .centrado{
-      text-align: center;
-  }
+.centrado{
+    text-align: center;
+}
 
-  .centrado p{
-      text-align: justify;
-      padding-left: 2%;
-      padding-right: 2%;
-  }
+.centrado p{
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+}
 
-  .historia p{
-      text-align: justify;
-  }
+.historia p{
+    text-align: justify;
+}
+
+.experiencia{
+    background-color: gainsboro;
+}
+
+
+.experiencia div:first-child h1{
+    font-family: "Quicksand";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.experiencia div article img{
+    height: 100px;
+}
+
+.experiencia div article h5{
+    font-family: "Quicksand";
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.trabajos{
+    background-color: bg-dark;
+}
+
+.trabajos h1{
+    color: white;
+}
+.trabajos h5{
+    font-family: "Quicksand";
+    font-weight: 900;
+    text-align: center;
+}
