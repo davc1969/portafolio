@@ -29,12 +29,12 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- Tíyulo de la página -->
-    <title>Document</title>
+    <title>Darío Valenzuela</title>
 </head>
 
 
 <body>
-
+    <!-- Navbar de Bootstrap, se agregó transparencia de fondo y cambio de fondo al hacer scroll, se usó una fuente diferente para el nombre -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -55,17 +55,17 @@
                         <a class="nav-link" href="#miexperiencia">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trabajos</a>
+                        <a class="nav-link" href="#trabajos">Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
+    <!-- Imagen Hero, con exto encima -->
     <header class="hero-image">
         <div>
           <h1>Yo, Darío Valenzuela</h1>
@@ -75,6 +75,7 @@
     </header>
 
     <main>
+        <!-- Sección Sobre Mi, incluye dos columnas con parrafos y títulos. Desaparece en móviles y en formato pequeño -->
         <section class="container-fluid d-none d-sm-block sobremi py-5" id="aboutme">
             <h1>Una historia en dos partes</h1>
             <hr>
@@ -135,6 +136,7 @@
             </div>
         </section>
 
+        <!-- Sección de experiencia, se hizo usando grilla y de manera responsiva, ajusta el número de columnas al tamaño de la pantalla -->
         <section class="container-fluid experiencia  text-center pt-5" id="miexperiencia">
             <div>
                 <h1>Experiencia profesional</h1>
@@ -182,7 +184,8 @@
 
         </section>
 
-        <section class="container-fluid trabajos py-5 bg-dark">
+        <!-- Sección de Trabajos recientes, mostrando los proyectos realizados en el curso, se usaron Cards de Bootstrap -->
+        <section class="container-fluid trabajos py-5 bg-dark" id="trabajos">
             <div>
                 <h1 class="mt-2">
                     TRABAJOS RECIENTES
@@ -270,14 +273,15 @@
 
         </section>
 
-        <section class="container text-center contacto py-5">
+        <!-- Sección de contacto, se uso forma de Typeform, también está de manera responsiva -->
+        <section class="container text-center contacto py-5" id="contacto">
             <div>
                 <h1>Contacto</h1>
                 <hr>
             </div>
 
             <div>
-                <div class="typeform-widget" data-url="https://form.typeform.com/to/jkz09qwu?typeform-medium=embed-snippet" style="width: 60%; height: 500px; margin:auto;">
+                <div class="typeform-widget typeform_size" data-url="https://form.typeform.com/to/jkz09qwu?typeform-medium=embed-snippet" >
                 </div> 
                 <script> 
                     (function () 
@@ -302,6 +306,7 @@
         </section>
     </main>
 
+    <!-- Footer mostrando la firma y redes sociales -->
     <footer class="text-center py-5 bg-dark">
         <div class="row container m-auto">
             <div class="col-12 col-sm-6">
@@ -309,12 +314,20 @@
             </div>
 
             <div class="col-12 col-sm-6 mt4 mt-sm-0">
-                <i class="fab fa-github fa-3x mx-2"></i>
-                <i class="fab fa-linkedin fa-3x mx-2"></i>
-                <i class="fab fa-twitter-square fa-3x mx-2"></i>
-                <i class="fab fa-facebook-square fa-3x mx-2"></i></span>
+                <a href="https://github.com/davc1969">
+                    <i class="fab fa-github fa-3x mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dariovalenzuelac">
+                    <i class="fab fa-linkedin fa-3x mx-2"></i>
+                </a>
+                <a href="https://twitter.com/davc1969">
+                    <i class="fab fa-twitter-square fa-3x mx-2"></i>
+                </a>
+                <a href="https://www.facebook.com/davc1969">
+                    <i class="fab fa-facebook-square fa-3x mx-2"></i>
+                </a>
             </div>
-        
+
         </div>
 
     </footer>
@@ -333,6 +346,7 @@
 
     <!-- Scripts personales -->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 
